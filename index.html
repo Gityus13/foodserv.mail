@@ -74,20 +74,8 @@
         </div>
 
         <div class="mt-8">
-          <h4 class="font-bold text-gray-800 mb-4">Bizi İzləyin</h4>
-          <div class="flex space-x-4">
-            <a href="#" class="bg-gray-100 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="bg-gray-100 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="bg-gray-100 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="bg-gray-100 hover:bg-green-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-              <i class="fab fa-twitter"></i>
-            </a>
+           <div class="flex space-x-4">
+          
           </div>
         </div>
       </div>
@@ -107,7 +95,15 @@
         <label for="message">Mesajınız</label>
         <textarea name="Message" id="message" rows="6" required style="width: 100%; padding: 8px; margin-bottom: 12px;"></textarea>
 
-        <div class="g-recaptcha" data-sitekey="6LdGBGwrAAAAAG_2v8Qu4U7mVR-ODfNmoyfhOciD" style="margin-bottom: 16px;"></div>
+        <!-- Load reCAPTCHA script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Simple form with reCAPTCHA -->
+<form action="#" method="POST">
+  <div class="g-recaptcha" data-sitekey="6LdYPpMrAAAAAA99lswuLzbGvME9BRplMAFCdjAp"></div>
+  <br>
+  <button type="submit">Əlaqə Saxlayın</button>
+</form>
 
         <button type="submit" style="width: 100%; padding: 12px; background-color: #333; color: white; border: none; cursor: pointer;">Mesaj Göndər</button>
       </form>
